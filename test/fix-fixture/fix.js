@@ -1,0 +1,2 @@
+let formatJS = 'foo';
+formatJS

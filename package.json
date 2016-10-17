@@ -1,0 +1,49 @@
+{
+  "name": "broccoli-standard",
+  "version": "0.0.1",
+  "description": "broccoli filter for standard formatting",
+  "main": "lib/index.js",
+  "scripts": {
+    "setup": "rm -rf temp; mkdir tmp; mkdir tmp/fix-fixture; cp test/fix-fixture/fix.js tmp/fix-fixture/fix.js",
+    "build": "broccoli build temp > broccoli-build.out",
+    "test": "npm run setup && npm run build && node node_modules/mocha/bin/mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/arschmitz/broccoli-standard.git"
+  },
+  "keywords": [
+    "eslint",
+    "lint",
+    "broccoli",
+    "validate",
+    "jshint",
+    "jslint",
+    "esprima",
+    "broccoli-plugin"
+  ],
+  "author": {
+    "name": "Alex Schmitz",
+    "url": "https://github.com/arschmitz/qunit-assert-classes/blob/master/AUTHORS.txt"
+  },
+  "homepage": "https://github.com/arschmitz/broccoli-standard",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arschmitz/broccoli-standard/issues"
+  },
+  "dependencies": {
+    "broccoli-filter": "^1.2.4",
+    "eslint": "^3.0.0",
+    "standard": "^8.4.0",
+    "suspend": "^0.7.0"
+  },
+  "standard": {
+    "globals": [ "testGlobal", "it" ]
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "rimraf": "~2.2.6",
+    "broccoli": "^0.7.2",
+    "broccoli-merge-trees": "^0.1.3"
+  }
+}
