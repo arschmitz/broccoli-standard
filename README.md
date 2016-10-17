@@ -1,6 +1,6 @@
 # [broccoli](https://github.com/joliss/broccoli)-standard [![Build Status](https://travis-ci.org/arschmitz/broccoli-standard.png?branch=master)](https://travis-ci.org/makepanic/broccoli-eslint)
 
-> Lint JavaScript using [Eslint](http://eslint.org/)
+> Standardize your JavaScript using [Standard](https://github.com/feross/standard/)
 
 This plugin is heavily inspired by and based on broccoli-eslint by makepanic [makepanic/broccoli-eslint](https://github.com/makepanic/broccoli-eslint).
 
