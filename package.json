@@ -1,6 +1,6 @@
 {
   "name": "broccoli-standard",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "broccoli filter for standard formatting",
   "main": "lib/index.js",
   "scripts": {
@@ -38,7 +38,10 @@
     "suspend": "^0.7.0"
   },
   "standard": {
-    "globals": [ "testGlobal", "it" ]
+    "globals": [
+      "testGlobal",
+      "it"
+    ]
   },
   "devDependencies": {
     "mocha": "*",
