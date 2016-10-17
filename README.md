@@ -14,12 +14,12 @@ npm install --save broccoli-standard
 
 ```js
 var standard = require('broccoli-standard');
-tree = standard(tree, options);
+tree = standard(node, options);
 ```
 
 ## API
 
-### standard(tree, options)
+### standard(node, options)
 
 #### options
 
