@@ -1,4 +1,4 @@
-# [broccoli](https://github.com/joliss/broccoli)-standard [![Build Status](https://travis-ci.org/arschmitz/broccoli-standard.png?branch=master)](https://travis-ci.org/makepanic/broccoli-eslint)
+# [broccoli](https://github.com/joliss/broccoli)-standard [![Build Status](https://travis-ci.org/arschmitz/broccoli-standard.png?branch=master)](https://travis-ci.org/arschmitz/broccoli-standard)
 
 > Standardize your JavaScript using [Standard](https://github.com/feross/standard/)
 

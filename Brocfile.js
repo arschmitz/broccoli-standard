@@ -1,20 +1,27 @@
 module.exports = function (broccoli) {
-  let standard = require('./lib/index')
-  let mergeTrees = require('broccoli-merge-trees')
+  const standard = require('./lib/index')
+  const mergeTrees = require('broccoli-merge-trees')
 
-    // lint plugin code
-  var plugin = standard('lib')
+  // lint plugin code
+  const plugin = standard('lib',{logOutput:true})
 
-    // lint tests
-  var test = standard('test/fixture')
+  // Tests
+  const test = standard('test/fixture',{logOutput:true})
 
-  var format = standard('test/format-fixture', {
-    format: 'eslint/lib/formatters/compact'
+  const format = standard('test/format-fixture', {
+    format: 'eslint/lib/formatters/compact',
+    logOutput:true
   })
 
-  var fix = standard('tmp/fix-fixture', {
-    fix: true
+  const fix = standard('tmp/fix-fixture', {
+    fix: true,
+    logOutput:true
   })
 
-  return mergeTrees([plugin, test, format, fix], { overwrite: true })
+  const testGenerator = standard('test/test-generator-fixture', {
+    testGenerator: 'qunit',
+    logOutput:true
+  })
+
+  return mergeTrees([plugin, test, format, fix, testGenerator], { overwrite: true })
 }

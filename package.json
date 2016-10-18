@@ -19,6 +19,10 @@
     "validate",
     "jshint",
     "jslint",
+    "standard",
+    "standard format",
+    "code style",
+    "broccoli standard format",
     "esprima",
     "broccoli-plugin"
   ],
@@ -32,8 +36,9 @@
     "url": "https://github.com/arschmitz/broccoli-standard/issues"
   },
   "dependencies": {
-    "broccoli-filter": "^1.2.4",
+    "broccoli-persistent-filter": "^1.2.11",
     "eslint": "^3.0.0",
+    "js-string-escape": "^1.0.1",
     "standard": "^8.4.0",
     "suspend": "^0.7.0"
   },
@@ -44,9 +49,9 @@
     ]
   },
   "devDependencies": {
-    "mocha": "*",
-    "rimraf": "~2.2.6",
     "broccoli": "^0.7.2",
-    "broccoli-merge-trees": "^0.1.3"
+    "broccoli-merge-trees": "^0.1.3",
+    "mocha": "*",
+    "rimraf": "~2.2.6"
   }
 }
