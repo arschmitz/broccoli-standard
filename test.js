@@ -8,7 +8,7 @@ it('basic errors reported', () => {
   assert(buildLog.indexOf('Extra semicolon') !== -1, 'Detects semicolon')
 })
 it('correct number of errors', () => {
-  assert.equal(buildLog.split('\n').length, 36, 'Proper number of errors found')
+  assert.equal(buildLog.split('\n').length, 30, 'Proper number of errors found')
 })
 it('Respects settings from package.json', () => {
   assert(buildLog.indexOf('testGlobal') === -1, 'Global defined in package.json is respected')
