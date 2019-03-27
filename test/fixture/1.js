@@ -1,2 +1,2 @@
 let foo = 'bar'
-foo
+console.log(foo)
