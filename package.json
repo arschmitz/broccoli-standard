@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "setup": "rm -rf tmp; mkdir tmp; mkdir tmp/fix-fixture; cp test/fix-fixture/fix.js tmp/fix-fixture/fix.js",
-    "build": "broccoli build temp > broccoli-build.out",
+    "build": "test=true broccoli build temp > broccoli-build.out",
     "test": "npm run setup && npm run build && mocha test.js"
   },
   "repository": {
